@@ -4,16 +4,16 @@ using UnityEngine;
 using SlugBase.Features;
 using static SlugBase.Features.FeatureTypes;
 
-namespace SlugTemplate
+namespace shadowSneaker
 {
-    [BepInPlugin(MOD_ID, "Slugcat Template", "0.1.0")]
+    [BepInPlugin(MOD_ID, "The ShadowSneaker", "0.1.0")]
     class Plugin : BaseUnityPlugin
     {
-        private const string MOD_ID = "author.slugtemplate";
+        private const string MOD_ID = "techdev.shadowSneaker";
 
-        public static readonly PlayerFeature<float> SuperJump = PlayerFloat("slugtemplate/super_jump");
-        public static readonly PlayerFeature<bool> ExplodeOnDeath = PlayerBool("slugtemplate/explode_on_death");
-        public static readonly GameFeature<float> MeanLizards = GameFloat("slugtemplate/mean_lizards");
+        public static readonly PlayerFeature<float> SuperJump = PlayerFloat("shadowSneaker/super_jump");
+        public static readonly PlayerFeature<bool> ExplodeOnDeath = PlayerBool("shadowSneaker/explode_on_death");
+        public static readonly GameFeature<float> MeanLizards = GameFloat("shadowSneaker/mean_lizards");
 
 
         // Add hooks
